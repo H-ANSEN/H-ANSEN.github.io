@@ -2,9 +2,9 @@
 
 html { width: 100%; height: 100%; }
 
-body { background: #000; font-size: 12px; line-height: 1.5; display: block; height: 100%; }
+body { background: #000; color: #ccc; font-size: 12px; line-height: 1.5; display: block; height: 100%; }
 
-blockquote { border-left: .25em solid #dfe2e5; color: #6a737d; padding: 0 1em; }
+blockquote { border-left: .25em solid #393e3f; color: #6a737d; padding: 0 1em; }
 
 /*******************************************************/
 /* HEADER */
@@ -16,7 +16,9 @@ blockquote { border-left: .25em solid #dfe2e5; color: #6a737d; padding: 0 1em; }
 /* CONTENT CONTAINER */
 .content_container { font: 12px Arial, Verdana, Geneva, sans-serif; text-decoration: none; margin: 0 auto; width: 1000px; }
 
-.content_container a { text-decoration: none; }
+.content_container a { color: #497cf5; text-decoration: none; }
+
+.content_container a:hover { text-decoration: underline; }
 
 .content_inner_container { padding: 10px 20px 10px 20px; border-radius: 5px; border: 1px solid #ccc; background: url(/assets//images/bg.jpg) center top no-repeat; }
 
@@ -37,7 +39,7 @@ blockquote { border-left: .25em solid #dfe2e5; color: #6a737d; padding: 0 1em; }
 .sidebar_inner li { list-style: none; font-size: 12px; padding: 10px; }
 
 /* GitHub style for Pygments syntax highlighter, for use with Jekyll Courtesy of GitHub.com  src: https://github.com/aahan/pygments-github-style */
-.highlight pre, pre { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
+.highlight pre, pre { background-color: #393e3f; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
 
 .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
 
@@ -128,5 +130,8 @@ blockquote { border-left: .25em solid #dfe2e5; color: #6a737d; padding: 0 1em; }
 .highlight .il { color: #009999; }
 
 .highlight .gc { color: #999; background-color: #EAF2F5; }
+
+/* Used to format images within a blog post w/ Kramdown */
+.post_img { width: 75%; height: 75%; margin: auto; display: block; }
 
 /*# sourceMappingURL=styles.css.map */
